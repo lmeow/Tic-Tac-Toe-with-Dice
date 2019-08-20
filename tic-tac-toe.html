@@ -1,0 +1,63 @@
+<!--
+TIC-TAC-TOE w/ DICE
+Maja Frankiewicz
+
+
+ABOUT GAME:
+
+	~ 	This is a tic-tac-toe game with a dice created with HTML, CSS and JavaScript.
+		
+INSTRUCTIONS:
+
+	~	Please roll the dice by pressing the "Roll dice"-button.
+	
+	~	If the dice lands on a odd number, X begins.
+		If the dice lands on a even number, O begins.
+		
+	~	It's also possible to choose who goes first, by pressing one of the small buttons
+		under the "Roll dice"-button.
+
+	~	First to 5 winning rounds, wins!
+
+	~   If a player tries to score a point for a round, after the first winner, but before a new round has started, 
+		then the winner gains an extra point.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Tic-Tac-Toe w/ Dice</title>
+	<link rel="stylesheet" type="text/css" href="templatet.css">
+</head>  
+
+<body> 
+	<div class="header">Tic-Tac-Toe with Dice</div> 
+	<div class="container">  
+		<div class="tooltip">
+			<br /> 
+			<span class="tooltiptext"> Odd: X starts Even: O starts</span> 
+		</div> 
+ 		<p id="diceNumber"> </p>
+  		<button id="diceButton">Roll dice  </button>
+  		<div id="text">or choose the 1st player by pressing one of the buttons:
+  			<button class="small" id="x">X</button> <button class="small" id="o">O</button> 
+		</div>
+  	</div>
+	<div class="container" id="main">
+		<span id="turn">...then play</span>
+		<span id="score">| X: 0 | O: 0 |</span>
+		<div class="box" id="box1"></div>
+		<div class="box" id="box2"></div>		
+		<div class="box" id="box3"></div>
+		<div class="box" id="box4"></div>	
+		<div class="box" id="box5"></div>
+		<div class="box" id="box6"></div>
+		<div class="box" id="box7"></div>
+		<div class="box" id="box8"></div>
+		<div class="box" id="box9"></div>	
+	</div>
+	<button onclick="replay()">Play Again</button>
+  	<button class="popup" id="popup">Pop-up</button> 
+  	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

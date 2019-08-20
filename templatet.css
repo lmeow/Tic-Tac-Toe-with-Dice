@@ -1,0 +1,119 @@
+* {box-sizing: border-box;
+		}
+
+.header	{	
+			
+			margin: 10px auto;
+			font-family: sans-serif; 
+			font-size: 50px; 
+			text-align: center; 
+			color: grey;   
+			border: #d9d9d9 1px solid; 
+			border-radius: 30px;
+}
+
+.container {
+			
+			width: 240px; 
+			overflow: hidden;
+			margin: 10px auto 0 auto; 
+			text-align: center;
+}
+
+.container .box {
+			
+			float: left; 
+			width: 80px;
+			height:80px;
+			border: 0.5px solid #0006; 
+			transition: all .25s ease-in-out;
+			font-family: fantasy; 
+			font-size: 80px; 
+			text-align: center; 
+			color: grey; 
+			line-height: 82px; 
+			cursor: pointer;  
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+.container .box:hover {
+
+			background: #d9d9d9;
+			color: #fff;  
+			border-radius: 20px;  
+
+}
+
+.container span{ width: 100%; display: block; text-align: center; font-family: sans-serif;color: #fff; color: #80bfff; font-size: 25px; background: #fff; margin-bottom: 20px; padding: 20px; 
+ }
+
+#text {text-align: center; font-family: fantasy; color: #80bfff; font-size: 13px;margin-bottom: 10px
+
+}
+
+
+
+button { background: #80bfff;color: #fff;  font-family: fantasy; border: 1px #ccffcc; cursor: pointer; width: 150px;height: 40px; font-size: 22px; display: block; margin: 10px auto; border-radius: 30px;   -webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+
+}
+
+button:hover { background: #4CAF50; /* Green */
+				color: white;
+}
+.small { background: #d9d9d9;color: #fff;  font-family: fantasy; border: 1px #ccffcc; cursor: pointer; width: 30px;height: 30px; font-size: 15px; margin: 10px auto; border-radius: 10px;   -webkit-transition-duration: 0.4s; /* Safari */ transition-duration: 0.4s; display:inline-block; border-color: #80bfff;
+}
+.small:hover { background: #80bfff; border-style:inset; /* Green */
+				color: white;
+
+}
+
+.popup { color: #fff; background: #4CAF50;
+position: fixed;
+bottom: 0;
+right: 10px;
+width: 75px;height: 40px; font-size: 16px
+}
+.popup:hover {background: #80bfff; border-style:inset; /* Green */
+					color: white;
+
+
+}
+
+	.score { background: #b3ffb3; color:#006600;border:#006600;}
+
+	#diceNumber { width: 100px;height:100px;border: 1px solid #000; margin: 0px auto;transition: all .25s ease-in-out;font-family: fantasy; font-size: 85px; text-align: center; line-height: 100px; color: grey;border-radius: 10px; border:0.5px solid #0006; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+
+}
+/* Tooltip container */
+.tooltip {
+	  visibility: hidden;
+	  color: white;
+
+
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+background: #4CAF50; /* Green */
+						color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
